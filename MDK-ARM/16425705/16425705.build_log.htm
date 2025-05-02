@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: curry cap, 23124, LIC=ZB4EI-TQFLR-2Z0W4-F1AGG-T65J7-7QQRY
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  F:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+F:\cubemx\16425705\MDK-ARM\16425705.uvprojx
+Project File Date:  04/13/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'F:\keil5\ARM\ARMCC\Bin'
+Build target '16425705'
+compiling fun.c...
+..\CODE\headfile.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\CODE\fun.h(5): warning:  #1295-D: Deprecated declaration oled_show - give arg types
+  void oled_show();
+..\CODE\fun.h(6): warning:  #1295-D: Deprecated declaration key_scan - give arg types
+  void key_scan();
+..\CODE\fun.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\CODE\fun.c(24): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOD,
+PIO_PIN_2,1);
+..\CODE\fun.c(26): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(
+PIOC,0x0080<<num,0);
+..\CODE\fun.c(28): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(
+PIOC,0x0080<<num,1);
+..\CODE\fun.c(30): warning:  #188-D: enumerated type mixed with another type
+  HAL_GPIO_WritePin(
+PIOD,
+PIO_PIN_2,0);
+..\CODE\fun.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=18854 RO-data=5082 RW-data=176 ZI-data=2232  
+FromELF: creating hex file...
+"16425705\16425705.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.4.0.pack
+                Keil::STM32G4xx_DFP@1.4.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_16425705
+  F:/keil5/ARM/PACK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  F:/keil5/ARM/PACK/Keil/STM32G4xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
